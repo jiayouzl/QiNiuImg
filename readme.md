@@ -16,6 +16,16 @@
 * 参数配置支持保存/读取
 * 已支持拖拽文件
 
+### 七牛参数配置获取方式
+
+#### 1. 获取AccessKey与SecretKey
+
+<img src="http://myimages.25531.com/20220715/iShot_2022-07-15_23.04.21.png" style="zoom:35%;" />
+
+#### 2. 获取BucketName与Domain
+
+<img src="http://myimages.25531.com/20220715/iShot_2022-07-15_23.08.24.png" style="zoom:35%;" />
+
 ## 开发环境
 
 1. MacBook Pro M1PRO
