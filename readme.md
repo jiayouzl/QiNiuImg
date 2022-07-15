@@ -1,6 +1,6 @@
 ## 效果预览
 
-<img src="http://myimages.25531.com/20220714/iShot_2022-07-14_22.31.26.png" style="zoom:100%;" />
+<img src="http://myimages.25531.com/20220714/iShot_2022-07-14_22.31.26.png" style="zoom:50%;" />
 
 ## 程序简介
 
@@ -8,17 +8,26 @@
 
 如使用中碰到任何Bug与建议请至仓库`issue`提交。
 
+### 功能简介
+* 参数配置支持保存/读取
+* 已支持拖拽文件
+
 ## 开发环境
 
 1. MacBook Pro M1PRO
 2. macOS Monterey `12.4`
 3. Python `3.9.13`
-4. Visual Studio Code And PyCharm
+4. Visual Studio Code And PyCharm 2022.1.3
 5. PySide6 And Designer
+
+## 编译环境
+* macOS Monterey `12.4`
+* Win10 `21H2`
+* Ubuntu `18.06`
 
 ## 下载/安装
 
-- From release: [https://github.com/jiayouzl/qiniuimg/releases](https://github.com/jiayouzl/qiniuimg/releases)
+- From release: [https://github.com/jiayouzl/QiNiuImg/releases](https://github.com/jiayouzl/QiNiuImg/releases)
 
 ## 文件说明
 ```
