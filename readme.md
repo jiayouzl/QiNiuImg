@@ -21,7 +21,8 @@
 5. PySide6 And Designer
 
 ## 编译环境
-* macOS Monterey `12.4`
+* macOS Monterey `12.4` `arm64`
+* macOS Monterey `12.4` `Intel 64-bit`
 
 ## 下载/安装
 
