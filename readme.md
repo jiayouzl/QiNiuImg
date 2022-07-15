@@ -4,7 +4,7 @@
 
 ## 程序简介
 
-一个`PySide6/PYQT6`的练手APP，QT真的很强大，慢慢摸索中后续有新的想法也会对该APP进行升级，支持`Windows/MacOS/Linux`平台。
+一个`PySide6/PYQT6`的练手APP，QT真的很强大，慢慢摸索中后续有新的想法也会对该APP进行升级，支持`MacOS`平台。
 
 如使用中碰到任何Bug与建议请至仓库`issue`提交。
 
@@ -22,8 +22,6 @@
 
 ## 编译环境
 * macOS Monterey `12.4`
-* Win10 `21H2`
-* Ubuntu `18.06`
 
 ## 下载/安装
 
