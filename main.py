@@ -7,12 +7,14 @@ import sys
 from datetime import datetime
 
 import qiniu.config
+import qtawesome as qta
 from PySide6.QtWidgets import (QApplication, QFileDialog, QMessageBox, QPushButton, QWidget)
 from qiniu import Auth, etag, put_file
 
 from ui import Ui_Dialog
 
 # print(os.path.join(os.environ.get("HOME", "~"), "Library/Preferences"))#/Users/zhanglei/Library/Preferences
+
 
 class Window(QWidget):
 
@@ -29,9 +31,25 @@ class Window(QWidget):
 
         self.ui.setupUi(self)
 
+        #设置按钮的图标
+        upload_icon = qta.icon('fa.save')
+        self.ui.pushButton.setIcon(upload_icon)
+
+        upload_icon = qta.icon('ei.upload')
+        self.ui.pushButton_2.setIcon(upload_icon)
+
+        copy_icon = qta.icon('fa.copy')
+        self.ui.pushButton_3.setIcon(copy_icon)
+        self.ui.pushButton_4.setIcon(copy_icon)
+        self.ui.pushButton_5.setIcon(copy_icon)
+
+
         #将标签变为超级链接框
-        self.ui.label_9.setText("<a style='color:#5589C5;text-decoration:none' href=\"https://github.com/jiayouzl/QiNiuImg\">开源地址")
+        self.ui.label_9.setText(chr(0xf0c1) + " " + "<a style='color:#5589C5;text-decoration:none' href=\"https://github.com/jiayouzl/QiNiuImg\">开源地址")
         self.ui.label_9.setOpenExternalLinks(True)  # 使其成为超链接
+        #设置标签图标
+        self.ui.label_9.setFont(qta.font('fa', 13))
+        self.ui.label_9.setStyleSheet("color: blue;")#设置图标为蓝色
 
         # 调用Drops方法
         self.setAcceptDrops(True)
