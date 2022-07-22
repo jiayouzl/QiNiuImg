@@ -107,7 +107,7 @@ class Window(QWidget):
 
     # 鼠标放开执行
     def dropEvent(self, evn):
-        # print('鼠标放开了')
+        # print('鼠标放开')
         pass
 
     def dragMoveEvent(self, evn):
