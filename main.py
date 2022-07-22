@@ -13,6 +13,7 @@ from qiniu import Auth, etag, put_file
 
 from ui import Ui_Dialog
 
+
 # print(os.path.join(os.environ.get("HOME", "~"), "Library/Preferences"))#/Users/zhanglei/Library/Preferences
 
 
@@ -31,7 +32,7 @@ class Window(QWidget):
 
         self.ui.setupUi(self)
 
-        #设置按钮的图标
+        # 设置按钮的图标
         upload_icon = qta.icon('fa.save')
         self.ui.pushButton.setIcon(upload_icon)
 
@@ -43,13 +44,12 @@ class Window(QWidget):
         self.ui.pushButton_4.setIcon(copy_icon)
         self.ui.pushButton_5.setIcon(copy_icon)
 
-
-        #将标签变为超级链接框
+        # 将标签变为超级链接框
         self.ui.label_9.setText(chr(0xf0c1) + " " + "<a style='color:#5589C5;text-decoration:none' href=\"https://github.com/jiayouzl/QiNiuImg\">开源地址")
         self.ui.label_9.setOpenExternalLinks(True)  # 使其成为超链接
-        #设置标签图标
+        # 设置标签图标
         self.ui.label_9.setFont(qta.font('fa', 13))
-        self.ui.label_9.setStyleSheet("color: blue;")#设置图标为蓝色
+        self.ui.label_9.setStyleSheet("color: blue;")  # 设置图标为蓝色
 
         # 调用Drops方法
         self.setAcceptDrops(True)
@@ -57,7 +57,7 @@ class Window(QWidget):
         # 读取配置文件
         try:
             result = self.plist_read(self.get_resource_path('Config/com.zhenglei.qiniu.plist'))
-            #取列表数量
+            # 取列表数量
             count = len(result['ProgramArguments'])
             print(result['ProgramArguments'])
             self.ui.lineEdit.setText(result['ProgramArguments'][0])
@@ -123,7 +123,8 @@ class Window(QWidget):
 
     def xuanzetupian(self):
         print('选择图片被点击')
-        fileName, filetype = QFileDialog.getOpenFileName(self, caption="选取文件", dir=os.path.expanduser('~/Pictures/iShot截屏'), filter="All Files (*);;Text Files (*.txt);;Image Files (*.png *.jpg *.jpeg *.bmp)")
+        fileName, filetype = QFileDialog.getOpenFileName(self, caption="选取文件", dir=os.path.expanduser('~/Pictures/iShot截屏'),
+                                                         filter="All Files (*);;Text Files (*.txt);;Image Files (*.png *.jpg *.jpeg *.bmp)")
         print(fileName, filetype)
         self.ui.lineEdit_5.setText(fileName)
 
