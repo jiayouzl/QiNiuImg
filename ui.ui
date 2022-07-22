@@ -32,7 +32,7 @@
    <bool>false</bool>
   </property>
   <property name="windowTitle">
-   <string>七牛图床 v1.0.0</string>
+   <string>七牛图床 v1.0.1</string>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>

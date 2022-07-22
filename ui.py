@@ -154,7 +154,7 @@ class Ui_Dialog(object):
     # setupUi
 
     def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"\u4e03\u725b\u56fe\u5e8a v1.0.0", None))
+        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"\u4e03\u725b\u56fe\u5e8a v1.0.1", None))
         self.groupBox.setTitle(QCoreApplication.translate("Dialog", u"\u53c2\u6570\u914d\u7f6e\uff1a", None))
         self.pushButton.setText(QCoreApplication.translate("Dialog", u"\u4fdd\u5b58\u914d\u7f6e", None))
         self.lineEdit.setText("")
