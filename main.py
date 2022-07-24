@@ -48,6 +48,7 @@ class Window(QWidget):
         self.ui.label_9.setText(chr(0xf0c1) + " " + "<a style='color:#5589C5;text-decoration:none' href=\"https://github.com/jiayouzl/QiNiuImg\">开源地址")
         self.ui.label_9.setOpenExternalLinks(True)  # 使其成为超链接
         # 设置标签图标
+        # TODO:这里的fa是图标库的名称
         self.ui.label_9.setFont(qta.font('fa', 13))
         self.ui.label_9.setStyleSheet("color: blue;")  # 设置图标为蓝色
 
