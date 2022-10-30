@@ -7,11 +7,11 @@ from datetime import datetime
 
 import qiniu.config
 import qtawesome as qta
-from PySide6.QtWidgets import (QApplication, QFileDialog, QMessageBox, QPushButton, QWidget)
+from PySide6.QtWidgets import QApplication, QFileDialog, QMessageBox, QPushButton, QWidget
+from PySide6.QtCore import QTranslator
 from qiniu import Auth, etag, put_file
 
 from ui import Ui_Dialog
-
 
 # print(os.path.join(os.environ.get("HOME", "~"), "Library/Preferences"))#/Users/zhanglei/Library/Preferences
 
@@ -123,8 +123,7 @@ class Window(QWidget):
 
     def xuanzetupian(self):
         print('选择图片被点击')
-        fileName, filetype = QFileDialog.getOpenFileName(self, caption="选取文件", dir=os.path.expanduser('~/Pictures/iShot截屏'),
-                                                         filter="All Files (*);;Text Files (*.txt);;Image Files (*.png *.jpg *.jpeg *.bmp)")
+        fileName, filetype = QFileDialog.getOpenFileName(self, caption="选取文件", dir=os.path.expanduser('~/Pictures/iShot截屏'), filter="All Files (*);;Text Files (*.txt);;Image Files (*.png *.jpg *.jpeg *.bmp)")
         print(fileName, filetype)
         self.ui.lineEdit_5.setText(fileName)
 
@@ -200,6 +199,9 @@ class Window(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+    translator = QTranslator()
+    translator.load('qtbase_zh_CN.qm', 'Language')
+    app.installTranslator(translator)
     window = Window()
     window.show()
     sys.exit(app.exec())
