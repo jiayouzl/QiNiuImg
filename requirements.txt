@@ -1,3 +1,3 @@
-PySide6==6.4.1
-qiniu==7.9.0
-QtAwesome==1.2.1
+PySide6==6.6.0
+qiniu==7.12.0
+QtAwesome==1.2.3
